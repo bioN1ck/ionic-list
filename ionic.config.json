@@ -1,0 +1,7 @@
+{
+  "name": "wilson-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
