@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Photos" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngIf="photo$ | async as photo">
+  <ion-img class="image" [src]="photo.url"></ion-img>
+  <h3 class="title">{{photo.title}}</h3>
+</ion-content>
