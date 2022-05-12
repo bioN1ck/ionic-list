@@ -1,0 +1,7 @@
+
+<div *ngIf="photo" class="photo-item" [routerLink]="'/photo/' + photo.id">
+  <div class="photo-item__content">
+    <ion-img class="item-thumbnail" [src]="photo.thumbnailUrl"></ion-img>
+    <ion-label class="item-label">{{photo.title}}</ion-label>
+  </div>
+</div>
